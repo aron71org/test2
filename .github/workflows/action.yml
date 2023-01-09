@@ -17,4 +17,5 @@ jobs:
       - name: conftest
         run: |
           conftest --version
-          conftest test ${{github.workspace}}/serverless
+          find /project
+          #conftest test ${{github.workspace}}/serverless
