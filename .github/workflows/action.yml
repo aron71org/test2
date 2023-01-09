@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: openpolicyagent/conftest:latest
+      image: openpolicyagent/conftest:v0.37.0
       volumes:
         - ${{github.workspace}}:/project
     steps:
@@ -17,3 +17,4 @@ jobs:
       - name: conftest
         run: |
           conftest --version
+          conftest test ${{github.workspace}}/serverless
