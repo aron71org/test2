@@ -17,4 +17,5 @@ jobs:
       - name: conftest
         run: |
           conftest --version
-          conftest test project/serverless
+          echo " git ${{github.workspace}}"
+          conftest test ${{github.workspace}}/serverless
