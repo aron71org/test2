@@ -6,7 +6,7 @@ provider:
   name: aws
   runtime: python2.7
   tags:
-#    author: "me"
+    author: "me"
     
 functions:
   cron:
