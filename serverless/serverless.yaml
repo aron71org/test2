@@ -4,13 +4,13 @@ frameworkVersion: ">=1.2.0 <2.0.0"
 
 provider:
   name: aws
-  runtime: python2.7.0
+  runtime: python2.7
   tags:
     author: "me"
     
 functions:
   cron:
     handler: handler.run
-    runtime: python2.7.0
+    runtime: python2.7
     events:
       - schedule: cron(0/2 * ? * MON-FRI *)
